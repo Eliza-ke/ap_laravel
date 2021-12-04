@@ -14,9 +14,12 @@ use App\Http\Controllers\HomeController;
 |
 */
 
-Route::get('/', [HomeController::class, 'index']);
+//Route::get('/', [HomeController::class, 'index']);
+
 /*
 Route::get('Subcontact/{name}',function($name){
     return $name;
 }); 
 */
+
+Route::resource('posts',HomeController::class);
